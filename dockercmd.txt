@@ -1,0 +1,24 @@
+・イメージ取得
+docker pull "image"
+・現在実行中のコンテナを確認(プロセス)
+docker ps
+・今までの実行履歴を確認
+docker ps -a
+・コンテナの削除
+docker rm "CONTAINER ID"
+・コンテナに再接続する(起動中の場合)
+docker attach "CONTAINER NAME"
+・コンテナから抜ける(停止しているわけではない)
+ctrl + P+Q
+・コンテナをシャットダウンさせて抜ける
+exit
+・イメージの一覧を参照する
+docker images
+・イメージからコンテナを作成
+docker run -it --name 'your container name' 'image' option
+・コンテナを起動する
+docker start "CONTAINER ID"
+・コンテナを止める
+docker stop "CONTAINER ID"
+・コンテナからイメージを作成する
+docker commit "CONTAINER ID" "your image name"
