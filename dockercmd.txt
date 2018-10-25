@@ -22,5 +22,5 @@ docker start "CONTAINER ID"
 docker stop "CONTAINER ID"
 ・コンテナからイメージを作成する
 docker commit "CONTAINER ID" "your image name"
-・複数のコンテナを止める
+・docker-compose.ymlに書かれているサービスを参考にコンテナを停止し、そのコンテナとネットワークを削除する
 docker-compose down
