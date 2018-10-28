@@ -22,7 +22,6 @@ docker start "CONTAINER ID"
 docker stop "CONTAINER ID"
 ・コンテナからイメージを作成する
 docker commit "CONTAINER ID" "your image name"
-
 [docker-compose]
 ・全コンテナを止める
 docker-compose down
@@ -32,3 +31,5 @@ docker-compose up --build -d nginx mysql phpmyadmin
 docker-compose exec mysql bash
 ・DB接続でハマった時に参照したリンク(laradock-nginx使用時)
 http://www.dn-web64.com/archives/web/laradock_laravel/
+・docker-compose.ymlに書かれているサービスを参考にコンテナを停止し、そのコンテナとネットワークを削除する
+docker-compose down
