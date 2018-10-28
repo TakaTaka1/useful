@@ -1,0 +1,5 @@
+・$PATHを通す
+~/.bash_profileに export PATH=$PATH:file path you want to add
+・$PATHを確認
+echo $PATH
+

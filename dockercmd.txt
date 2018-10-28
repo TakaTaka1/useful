@@ -22,3 +22,13 @@ docker start "CONTAINER ID"
 docker stop "CONTAINER ID"
 ・コンテナからイメージを作成する
 docker commit "CONTAINER ID" "your image name"
+
+[docker-compose]
+・全コンテナを止める
+docker-compose down
+・コンテナの立ち上げ(現状これしか実行してない)
+docker-compose up --build -d nginx mysql phpmyadmin
+・mysqlのコンテナに入る(表現があっているか不明/mysqlの箇所はコンテナIDでもOK)
+docker-compose exec mysql bash
+・DB接続でハマった時に参照したリンク(laradock-nginx使用時)
+http://www.dn-web64.com/archives/web/laradock_laravel/
