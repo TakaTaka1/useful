@@ -33,3 +33,5 @@ docker-compose exec mysql bash
 http://www.dn-web64.com/archives/web/laradock_laravel/
 ・docker-compose.ymlに書かれているサービスを参考にコンテナを停止し、そのコンテナとネットワークを削除する
 docker-compose down
+・指定したdocker-コンテナに入る(下記の場合、laradock_workspace_1にbashで入る)
+docker exec -it laradock_workspace_1 bash
