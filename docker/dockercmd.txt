@@ -35,3 +35,5 @@ http://www.dn-web64.com/archives/web/laradock_laravel/
 docker-compose down
 ・指定したdocker-コンテナに入る(下記の場合、laradock_workspace_1にbashで入る)
 docker exec -it laradock_workspace_1 bash
+・コンテナ同士をリンクさせる(下記の例はmysql)
+docker run -it --name testapp4 --link mysql:mysql -d -p 8080:80 techtaka/mycentos:1.0
