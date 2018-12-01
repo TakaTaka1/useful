@@ -23,4 +23,4 @@ Dockerについて
 
  Docker composeについて
  - yamlファイル１つで複数コンテナを定義
- - 
+ - docker-compose.yml(各種設定を行うファイル ポートフォワーディング等)
