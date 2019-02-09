@@ -37,3 +37,5 @@ docker-compose down
 docker exec -it laradock_workspace_1 bash
 ・コンテナ同士をリンクさせる(下記の例はmysql)
 docker run -it --name testapp4 --link mysql:mysql -d -p 8080:80 techtaka/mycentos:1.0
+・コンテナ起動時にphp-fpmが起動しなかった(sockがない)ので下記を実行したら設置されていた(TODO調べる)
+docker run --privileged --name withD -d --link mysql:mysql -d -p 8080:80 techtaka/getgit:1.0 /sbin/init
